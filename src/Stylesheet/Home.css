@@ -137,7 +137,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 .single{
     height: 75%;
@@ -160,4 +160,105 @@ body{
 
 .heightbx,.gdrbx{
     width: 80%;
+}
+
+
+@media screen and (max-width:1275px) {
+    .head{
+        font-size: 20px;
+        font-weight: 900;
+    }
+}
+@media screen and (max-width:1075px) {
+    .head{
+        font-size: 20px;
+        width: 40%;
+    }
+    .content-wrap{
+        grid-template-columns: repeat(4,1fr);
+        height: 650px;
+    }
+}
+@media screen and (max-width:976px){
+    .content-wrap{
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+    }
+}
+@media screen and (max-width:976px){
+    .content-wrap{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:768px){
+    .head{
+        font-size: 20px;
+        width: 50%;
+    }
+    .content-wrap{
+        /* background-color: aqua; */
+        /* height: 600px; */
+    }
+}
+@media screen and (max-width:688px){
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .head{
+        width: 50%;
+        text-align: center;
+    }
+    .content-wrap{
+        /* background-color: aqua; */
+        height: 700px;
+    }
+}
+@media screen and (max-width:586px){
+    .head{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width:474px){
+    .head{
+        width: 50%;
+        font-size: 15px;
+    }
+    .container{
+        height: 140px;
+        justify-content: center;
+    }
+    .namebx{
+        height: 30%;
+        /* background-color: aqua; */
+        font-size: 14px;
+    }
+    .text-icon{
+        font-size: 15px;
+        height: 20%;
+    }
+    .text-box i{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:375px){
+    .head{
+        font-size: 13px;
+        width: 55%;
+    }
+    .container{
+        height: 120px;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .namebx{
+        height: 25%;
+        font-size: 12px;
+    }
+    .text-icon{
+        height: 20%;
+    }
+    .text-box button{
+        padding: 0px 10px;
+    }
 }
