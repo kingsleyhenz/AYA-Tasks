@@ -137,7 +137,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .single{
     height: 75%;
@@ -178,8 +178,14 @@ body{
         grid-template-columns: repeat(4,1fr);
         height: 650px;
     }
+    .single img{
+        width: 55%;
+    }
 }
 @media screen and (max-width:976px){
+    .single{
+       height: 60%;
+    }
     .content-wrap{
         grid-template-columns: repeat(3,1fr);
         justify-items: center;
@@ -195,10 +201,10 @@ body{
         font-size: 20px;
         width: 50%;
     }
-    .content-wrap{
-        /* background-color: aqua; */
-        /* height: 600px; */
-    }
+    .single{
+        height: 55%;
+        width: 65%;
+     }
 }
 @media screen and (max-width:688px){
     body{
@@ -210,13 +216,23 @@ body{
         text-align: center;
     }
     .content-wrap{
-        /* background-color: aqua; */
         height: 700px;
+    }
+    .single-wrap{
+        top: 75px;
     }
 }
 @media screen and (max-width:586px){
     .head{
         font-size: 19px;
+    }
+    .single{
+        height: 45%;
+        width: 70%;
+    }
+    .single-text-box{
+        font-size: 17px;
+        gap: 40px;
     }
 }
 @media screen and (max-width:474px){
@@ -240,6 +256,13 @@ body{
     .text-box i{
         font-size: 20px;
     }
+    .single{
+        height: 40%;
+        width: 75%;
+    }
+    .single-text-box{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width:375px){
     .head{
@@ -260,5 +283,12 @@ body{
     }
     .text-box button{
         padding: 0px 10px;
+    }
+    .single{
+        height: 35%;
+        width: 85%;
+    }
+    .single-text-box{
+        font-size: 15px;
     }
 }
